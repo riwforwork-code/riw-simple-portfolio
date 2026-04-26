@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakkapon Riw | Data Analyst</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">PR.</div>
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle" class="theme-btn">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Pakkapon Riw</h1>
+                <p class="subtitle">Data Analyst</p>
+                <p class="description">Turning raw data into actionable insights through statistical analysis and visualization.</p>
+                <div class="cta">
+                    <a href="#projects" class="btn primary">View My Work</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <h3>E-commerce Customer Segmentation</h3>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>RFM Analysis</span>
+                        </div>
+                        <p>Segmented 10k+ customers using RFM analysis to drive targeted marketing strategies and improve retention.</p>
+                        <a href="#" class="btn secondary">View Project</a>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Financial Performance Dashboard</h3>
+                        <div class="tags">
+                            <span>Tableau</span>
+                            <span>Excel</span>
+                            <span>Data Viz</span>
+                        </div>
+                        <p>Created an interactive executive dashboard visualizing quarterly revenue trends and expense distribution.</p>
+                        <a href="#" class="btn secondary">View Project</a>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Predictive Sales Model</h3>
+                        <div class="tags">
+                            <span>Scikit-learn</span>
+                            <span>Time-Series</span>
+                            <span>Forecasting</span>
+                        </div>
+                        <p>Developed a time-series forecasting model to predict monthly sales with 92% accuracy across 5 regions.</p>
+                        <a href="#" class="btn secondary">View Project</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p>Interested in collaborating or discussing data? Reach out via the links below.</p>
+                <div class="contact-links">
+                    <a href="mailto:your.email@example.com">Email</a>
+                    <a href="https://linkedin.com/in/pakkapon-riw" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/pakkapon-riw" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Pakkapon Riw. Built with JetBrains Mono.</p>
+        </div>
+    </footer>
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+            toggleButton.textContent = document.body.classList.contains('light-mode') ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>
